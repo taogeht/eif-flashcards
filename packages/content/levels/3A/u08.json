@@ -1,0 +1,57 @@
+{
+  "slug": "u08",
+  "title": "Unit 8 - Let's learn more",
+  "level": "3A",
+  "order": 8,
+  "audioKey": "3A-track8",
+  "items": [
+    {
+      "id": 1,
+      "text": "a pumpkin",
+      "imageKey": "3A-track8-card1",
+      "audioKey": "3A-track8-card1"
+    },
+    {
+      "id": 2,
+      "text": "a jack-o-lantern",
+      "imageKey": "3A-track8-card2",
+      "audioKey": "3A-track8-card2"
+    },
+    {
+      "id": 3,
+      "text": "a mask",
+      "imageKey": "3A-track8-card3",
+      "audioKey": "3A-track8-card3"
+    },
+    {
+      "id": 4,
+      "text": "a spider",
+      "imageKey": "3A-track8-card4",
+      "audioKey": "3A-track8-card4"
+    },
+    {
+      "id": 5,
+      "text": "a ghost",
+      "imageKey": "3A-track8-card5",
+      "audioKey": "3A-track8-card5"
+    },
+    {
+      "id": 6,
+      "text": "a bat",
+      "imageKey": "3A-track8-card6",
+      "audioKey": "3A-track8-card6"
+    },
+    {
+      "id": 7,
+      "text": "a witch",
+      "imageKey": "3A-track8-card7",
+      "audioKey": "3A-track8-card7"
+    },
+    {
+      "id": 8,
+      "text": "a vampire",
+      "imageKey": "3A-track8-card8",
+      "audioKey": "3A-track8-card8"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "u02",
+  "title": "Unit 2 - It's a ...",
+  "level": "1A",
+  "order": 2,
+  "audioKey": "1A-track2",
+  "items": [
+    {
+      "id": 1,
+      "text": "a ball",
+      "imageKey": "1A-track2-card1",
+      "audioKey": "1A-track2-card1"
+    },
+    {
+      "id": 2,
+      "text": "a doll",
+      "imageKey": "1A-track2-card2",
+      "audioKey": "1A-track2-card2"
+    },
+    {
+      "id": 3,
+      "text": "a robot",
+      "imageKey": "1A-track2-card3",
+      "audioKey": "1A-track2-card3"
+    },
+    {
+      "id": 4,
+      "text": "a yo-yo",
+      "imageKey": "1A-track2-card4",
+      "audioKey": "1A-track2-card4"
+    }
+  ]
+}

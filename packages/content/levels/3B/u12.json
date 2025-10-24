@@ -1,0 +1,33 @@
+{
+  "slug": "u12",
+  "title": "Unit 12 - Let's learn more.",
+  "level": "3B",
+  "order": 12,
+  "audioKey": "3B-track12",
+  "items": [
+    {
+      "id": 1,
+      "text": "paddle",
+      "imageKey": "3B-track12-card1",
+      "audioKey": "3B-track12-card1"
+    },
+    {
+      "id": 2,
+      "text": "dragon boat",
+      "imageKey": "3B-track12-card2",
+      "audioKey": "3B-track12-card2"
+    },
+    {
+      "id": 3,
+      "text": "stand an egg",
+      "imageKey": "3B-track12-card3",
+      "audioKey": "3B-track12-card3"
+    },
+    {
+      "id": 4,
+      "text": "rice dumplings",
+      "imageKey": "3B-track12-card4",
+      "audioKey": "3B-track12-card4"
+    }
+  ]
+}

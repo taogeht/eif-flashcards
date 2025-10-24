@@ -1,0 +1,45 @@
+{
+  "slug": "u08",
+  "title": "Unit 8 - Let's learn more",
+  "level": "1A",
+  "order": 8,
+  "audioKey": "1A-track8",
+  "items": [
+    {
+      "id": 1,
+      "text": "red and yellow",
+      "imageKey": "1A-track8-card1",
+      "audioKey": "1A-track8-card1"
+    },
+    {
+      "id": 2,
+      "text": "orange",
+      "imageKey": "1A-track8-card2",
+      "audioKey": "1A-track8-card2"
+    },
+    {
+      "id": 3,
+      "text": "yellow and blue",
+      "imageKey": "1A-track8-card3",
+      "audioKey": "1A-track8-card3"
+    },
+    {
+      "id": 4,
+      "text": "green",
+      "imageKey": "1A-track8-card4",
+      "audioKey": "1A-track8-card4"
+    },
+    {
+      "id": 5,
+      "text": "red and blue",
+      "imageKey": "1A-track8-card5",
+      "audioKey": "1A-track8-card5"
+    },
+    {
+      "id": 6,
+      "text": "purple",
+      "imageKey": "1A-track8-card6",
+      "audioKey": "1A-track8-card6"
+    }
+  ]
+}

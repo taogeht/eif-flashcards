@@ -1,0 +1,45 @@
+{
+  "slug": "u09",
+  "title": "Unit 9 - Do you like to play ...?",
+  "level": "2B",
+  "order": 9,
+  "audioKey": "2B-track9",
+  "items": [
+    {
+      "id": 1,
+      "text": "basketball",
+      "imageKey": "2B-track9-card1",
+      "audioKey": "2B-track9-card1"
+    },
+    {
+      "id": 2,
+      "text": "baseball",
+      "imageKey": "2B-track9-card2",
+      "audioKey": "2B-track9-card2"
+    },
+    {
+      "id": 3,
+      "text": "table tennis",
+      "imageKey": "2B-track9-card3",
+      "audioKey": "2B-track9-card3"
+    },
+    {
+      "id": 4,
+      "text": "soccer",
+      "imageKey": "2B-track9-card4",
+      "audioKey": "2B-track9-card4"
+    },
+    {
+      "id": 5,
+      "text": "badminton",
+      "imageKey": "2B-track9-card5",
+      "audioKey": "2B-track9-card5"
+    },
+    {
+      "id": 6,
+      "text": "walk a dog",
+      "imageKey": "2B-track9-card6",
+      "audioKey": "2B-track9-card6"
+    }
+  ]
+}

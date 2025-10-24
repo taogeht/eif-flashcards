@@ -1,0 +1,33 @@
+{
+  "slug": "u12",
+  "title": "Unit 12 - Let's learn more.",
+  "level": "1B",
+  "order": 12,
+  "audioKey": "1B-track12",
+  "items": [
+    {
+      "id": 1,
+      "text": "airplane",
+      "imageKey": "1B-track12-card1",
+      "audioKey": "1B-track12-card1"
+    },
+    {
+      "id": 2,
+      "text": "MRT",
+      "imageKey": "1B-track12-card2",
+      "audioKey": "1B-track12-card2"
+    },
+    {
+      "id": 3,
+      "text": "bicycle",
+      "imageKey": "1B-track12-card3",
+      "audioKey": "1B-track12-card3"
+    },
+    {
+      "id": 4,
+      "text": "boat",
+      "imageKey": "1B-track12-card4",
+      "audioKey": "1B-track12-card4"
+    }
+  ]
+}

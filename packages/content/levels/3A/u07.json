@@ -1,0 +1,39 @@
+{
+  "slug": "u07",
+  "title": "Unit 7 - There's a ... in the ...",
+  "level": "3A",
+  "order": 7,
+  "audioKey": "3A-track7",
+  "items": [
+    {
+      "id": 1,
+      "text": "a sofa",
+      "imageKey": "3A-track7-card1",
+      "audioKey": "3A-track7-card1"
+    },
+    {
+      "id": 2,
+      "text": "a lamp",
+      "imageKey": "3A-track7-card2",
+      "audioKey": "3A-track7-card2"
+    },
+    {
+      "id": 3,
+      "text": "a closet",
+      "imageKey": "3A-track7-card3",
+      "audioKey": "3A-track7-card3"
+    },
+    {
+      "id": 5,
+      "text": "a CD player",
+      "imageKey": "3A-track7-card5",
+      "audioKey": "3A-track7-card5"
+    },
+    {
+      "id": 6,
+      "text": "an alarm clock",
+      "imageKey": "3A-track7-card6",
+      "audioKey": "3A-track7-card6"
+    }
+  ]
+}

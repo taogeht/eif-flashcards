@@ -1,0 +1,27 @@
+{
+  "slug": "u12",
+  "title": "Unit 12 - Let's learn more.",
+  "level": "2B",
+  "order": 12,
+  "audioKey": "2B-track12",
+  "items": [
+    {
+      "id": 1,
+      "text": "have breakfast",
+      "imageKey": "2B-track12-card1",
+      "audioKey": "2B-track12-card1"
+    },
+    {
+      "id": 2,
+      "text": "have lunch",
+      "imageKey": "2B-track12-card2",
+      "audioKey": "2B-track12-card2"
+    },
+    {
+      "id": 3,
+      "text": "have dinner",
+      "imageKey": "2B-track12-card3",
+      "audioKey": "2B-track12-card3"
+    }
+  ]
+}

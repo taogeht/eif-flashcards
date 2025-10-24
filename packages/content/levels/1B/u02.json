@@ -1,0 +1,45 @@
+{
+  "slug": "u02",
+  "title": "Unit 2 - Here's a ...",
+  "level": "1B",
+  "order": 2,
+  "audioKey": "1B-track2",
+  "items": [
+    {
+      "id": 1,
+      "text": "a plate",
+      "imageKey": "1B-track2-card1",
+      "audioKey": "1B-track2-card1"
+    },
+    {
+      "id": 2,
+      "text": "a fork",
+      "imageKey": "1B-track2-card2",
+      "audioKey": "1B-track2-card2"
+    },
+    {
+      "id": 3,
+      "text": "a glass",
+      "imageKey": "1B-track2-card3",
+      "audioKey": "1B-track2-card3"
+    },
+    {
+      "id": 4,
+      "text": "a pencil",
+      "imageKey": "1B-track2-card4",
+      "audioKey": "1B-track2-card4"
+    },
+    {
+      "id": 5,
+      "text": "a ruler",
+      "imageKey": "1B-track2-card5",
+      "audioKey": "1B-track2-card5"
+    },
+    {
+      "id": 6,
+      "text": "a crayon",
+      "imageKey": "1B-track2-card6",
+      "audioKey": "1B-track2-card6"
+    }
+  ]
+}

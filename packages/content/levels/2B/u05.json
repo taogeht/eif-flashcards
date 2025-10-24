@@ -1,0 +1,57 @@
+{
+  "slug": "u05",
+  "title": "Unit 5 - What's the matter? I ...",
+  "level": "2B",
+  "order": 5,
+  "audioKey": "2B-track5",
+  "items": [
+    {
+      "id": 1,
+      "text": "a cold",
+      "imageKey": "2B-track5-card1",
+      "audioKey": "2B-track5-card1"
+    },
+    {
+      "id": 2,
+      "text": "a cough",
+      "imageKey": "2B-track5-card2",
+      "audioKey": "2B-track5-card2"
+    },
+    {
+      "id": 3,
+      "text": "a headache",
+      "imageKey": "2B-track5-card3",
+      "audioKey": "2B-track5-card3"
+    },
+    {
+      "id": 4,
+      "text": "a toothache",
+      "imageKey": "2B-track5-card4",
+      "audioKey": "2B-track5-card4"
+    },
+    {
+      "id": 5,
+      "text": "a stomachache",
+      "imageKey": "2B-track5-card5",
+      "audioKey": "2B-track5-card5"
+    },
+    {
+      "id": 6,
+      "text": "a runny nose",
+      "imageKey": "2B-track5-card6",
+      "audioKey": "2B-track5-card6"
+    },
+    {
+      "id": 7,
+      "text": "a sore throat",
+      "imageKey": "2B-track5-card7",
+      "audioKey": "2B-track5-card7"
+    },
+    {
+      "id": 8,
+      "text": "a fever",
+      "imageKey": "2B-track5-card8",
+      "audioKey": "2B-track5-card8"
+    }
+  ]
+}

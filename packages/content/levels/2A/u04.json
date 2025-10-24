@@ -1,0 +1,81 @@
+{
+  "slug": "u04",
+  "title": "Unit 4 - Let's learn more.",
+  "level": "2A",
+  "order": 4,
+  "audioKey": "2A-track4",
+  "items": [
+    {
+      "id": 1,
+      "text": "big",
+      "imageKey": "2A-track4-card1",
+      "audioKey": "2A-track4-card1"
+    },
+    {
+      "id": 2,
+      "text": "small",
+      "imageKey": "2A-track4-card2",
+      "audioKey": "2A-track4-card2"
+    },
+    {
+      "id": 3,
+      "text": "long",
+      "imageKey": "2A-track4-card3",
+      "audioKey": "2A-track4-card3"
+    },
+    {
+      "id": 4,
+      "text": "short (pencil)",
+      "imageKey": "2A-track4-card4",
+      "audioKey": "2A-track4-card4"
+    },
+    {
+      "id": 5,
+      "text": "clean",
+      "imageKey": "2A-track4-card5",
+      "audioKey": "2A-track4-card5"
+    },
+    {
+      "id": 6,
+      "text": "dirty",
+      "imageKey": "2A-track4-card6",
+      "audioKey": "2A-track4-card6"
+    },
+    {
+      "id": 7,
+      "text": "old",
+      "imageKey": "2A-track4-card7",
+      "audioKey": "2A-track4-card7"
+    },
+    {
+      "id": 8,
+      "text": "young",
+      "imageKey": "2A-track4-card8",
+      "audioKey": "2A-track4-card8"
+    },
+    {
+      "id": 9,
+      "text": "tall",
+      "imageKey": "2A-track4-card9",
+      "audioKey": "2A-track4-card9"
+    },
+    {
+      "id": 10,
+      "text": "short (girl)",
+      "imageKey": "2A-track4-card10",
+      "audioKey": "2A-track4-card10"
+    },
+    {
+      "id": 11,
+      "text": "fat",
+      "imageKey": "2A-track4-card11",
+      "audioKey": "2A-track4-card11"
+    },
+    {
+      "id": 12,
+      "text": "thin",
+      "imageKey": "2A-track4-card12",
+      "audioKey": "2A-track4-card12"
+    }
+  ]
+}

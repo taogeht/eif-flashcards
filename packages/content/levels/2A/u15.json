@@ -1,0 +1,57 @@
+{
+  "slug": "u15",
+  "title": "Unit 15 - He can ... She can ...",
+  "level": "2A",
+  "order": 15,
+  "audioKey": "2A-track15",
+  "items": [
+    {
+      "id": 1,
+      "text": "kick a ball",
+      "imageKey": "2A-track15-card1",
+      "audioKey": "2A-track15-card1"
+    },
+    {
+      "id": 2,
+      "text": "lift a chair",
+      "imageKey": "2A-track15-card2",
+      "audioKey": "2A-track15-card2"
+    },
+    {
+      "id": 3,
+      "text": "ride a bike",
+      "imageKey": "2A-track15-card3",
+      "audioKey": "2A-track15-card3"
+    },
+    {
+      "id": 4,
+      "text": "fly a kite",
+      "imageKey": "2A-track15-card4",
+      "audioKey": "2A-track15-card4"
+    },
+    {
+      "id": 5,
+      "text": "find a toy",
+      "imageKey": "2A-track15-card5",
+      "audioKey": "2A-track15-card5"
+    },
+    {
+      "id": 6,
+      "text": "carry a bag",
+      "imageKey": "2A-track15-card6",
+      "audioKey": "2A-track15-card6"
+    },
+    {
+      "id": 7,
+      "text": "Pick up the marker.",
+      "imageKey": "2A-track15-card7",
+      "audioKey": "2A-track15-card7"
+    },
+    {
+      "id": 8,
+      "text": "Put down the marker.",
+      "imageKey": "2A-track15-card8",
+      "audioKey": "2A-track15-card8"
+    }
+  ]
+}

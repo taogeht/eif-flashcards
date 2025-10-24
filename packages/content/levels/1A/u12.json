@@ -1,0 +1,21 @@
+{
+  "slug": "u12",
+  "title": "Unit 12 - Let's learn more.",
+  "level": "1A",
+  "order": 12,
+  "audioKey": "1A-track12",
+  "items": [
+    {
+      "id": 1,
+      "text": "a pillow",
+      "imageKey": "1A-track12-card1",
+      "audioKey": "1A-track12-card1"
+    },
+    {
+      "id": 2,
+      "text": "a quilt",
+      "imageKey": "1A-track12-card2",
+      "audioKey": "1A-track12-card2"
+    }
+  ]
+}

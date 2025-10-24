@@ -1,0 +1,27 @@
+{
+  "slug": "u08",
+  "title": "Unit 8 - Let's learn more",
+  "level": "2A",
+  "order": 8,
+  "audioKey": "2A-track8",
+  "items": [
+    {
+      "id": 1,
+      "text": "Blow your nose with tissue.",
+      "imageKey": "2A-track8-card1",
+      "audioKey": "2A-track8-card1"
+    },
+    {
+      "id": 2,
+      "text": "Cover your mouth with your hand.",
+      "imageKey": "2A-track8-card2",
+      "audioKey": "2A-track8-card2"
+    },
+    {
+      "id": 3,
+      "text": "Don't talk with your mouth full.",
+      "imageKey": "2A-track8-card3",
+      "audioKey": "2A-track8-card3"
+    }
+  ]
+}

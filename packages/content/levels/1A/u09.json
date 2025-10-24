@@ -1,0 +1,51 @@
+{
+  "slug": "u09",
+  "title": "Unit 9 - Touch your ...",
+  "level": "1A",
+  "order": 9,
+  "audioKey": "1A-track9",
+  "items": [
+    {
+      "id": 1,
+      "text": "eyes",
+      "imageKey": "1A-track9-card1",
+      "audioKey": "1A-track9-card1"
+    },
+    {
+      "id": 2,
+      "text": "ears",
+      "imageKey": "1A-track9-card2",
+      "audioKey": "1A-track9-card2"
+    },
+    {
+      "id": 3,
+      "text": "a mouth",
+      "imageKey": "1A-track9-card3",
+      "audioKey": "1A-track9-card3"
+    },
+    {
+      "id": 4,
+      "text": "a nose",
+      "imageKey": "1A-track9-card4",
+      "audioKey": "1A-track9-card4"
+    },
+    {
+      "id": 5,
+      "text": "a face",
+      "imageKey": "1A-track9-card5",
+      "audioKey": "1A-track9-card5"
+    },
+    {
+      "id": 6,
+      "text": "hair",
+      "imageKey": "1A-track9-card6",
+      "audioKey": "1A-track9-card6"
+    },
+    {
+      "id": 7,
+      "text": "hands",
+      "imageKey": "1A-track9-card7",
+      "audioKey": "1A-track9-card7"
+    }
+  ]
+}

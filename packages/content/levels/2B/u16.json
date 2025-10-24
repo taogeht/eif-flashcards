@@ -1,0 +1,27 @@
+{
+  "slug": "u16",
+  "title": "Unit 16 - Let's learn more.",
+  "level": "2B",
+  "order": 16,
+  "audioKey": "2B-track16",
+  "items": [
+    {
+      "id": 1,
+      "text": "police station",
+      "imageKey": "2B-track16-card1",
+      "audioKey": "2B-track16-card1"
+    },
+    {
+      "id": 2,
+      "text": "post office",
+      "imageKey": "2B-track16-card2",
+      "audioKey": "2B-track16-card2"
+    },
+    {
+      "id": 3,
+      "text": "hospital",
+      "imageKey": "2B-track16-card3",
+      "audioKey": "2B-track16-card3"
+    }
+  ]
+}

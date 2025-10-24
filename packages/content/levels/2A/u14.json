@@ -1,0 +1,57 @@
+{
+  "slug": "u14",
+  "title": "Unit 14 - I can ",
+  "level": "2A",
+  "order": 14,
+  "audioKey": "2A-track14",
+  "items": [
+    {
+      "id": 1,
+      "text": "kiss",
+      "imageKey": "2A-track14-card1",
+      "audioKey": "2A-track14-card1"
+    },
+    {
+      "id": 2,
+      "text": "hug",
+      "imageKey": "2A-track14-card2",
+      "audioKey": "2A-track14-card2"
+    },
+    {
+      "id": 3,
+      "text": "write ABC",
+      "imageKey": "2A-track14-card3",
+      "audioKey": "2A-track14-card3"
+    },
+    {
+      "id": 4,
+      "text": "stack blocks",
+      "imageKey": "2A-track14-card4",
+      "audioKey": "2A-track14-card4"
+    },
+    {
+      "id": 5,
+      "text": "play with a hula hoop",
+      "imageKey": "2A-track14-card5",
+      "audioKey": "2A-track14-card5"
+    },
+    {
+      "id": 6,
+      "text": "skip",
+      "imageKey": "2A-track14-card6",
+      "audioKey": "2A-track14-card6"
+    },
+    {
+      "id": 7,
+      "text": "Take out the book.",
+      "imageKey": "2A-track14-card7",
+      "audioKey": "2A-track14-card7"
+    },
+    {
+      "id": 8,
+      "text": "Put away the book.",
+      "imageKey": "2A-track14-card8",
+      "audioKey": "2A-track14-card8"
+    }
+  ]
+}

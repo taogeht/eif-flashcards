@@ -1,0 +1,45 @@
+{
+  "slug": "u13",
+  "title": "Unit 13 - What do you like? I like ...",
+  "level": "1A",
+  "order": 13,
+  "audioKey": "1A-track13",
+  "items": [
+    {
+      "id": 1,
+      "text": "cake",
+      "imageKey": "1A-track13-card1",
+      "audioKey": "1A-track13-card1"
+    },
+    {
+      "id": 2,
+      "text": "candy",
+      "imageKey": "1A-track13-card2",
+      "audioKey": "1A-track13-card2"
+    },
+    {
+      "id": 3,
+      "text": "fish",
+      "imageKey": "1A-track13-card3",
+      "audioKey": "1A-track13-card3"
+    },
+    {
+      "id": 4,
+      "text": "soup",
+      "imageKey": "1A-track13-card4",
+      "audioKey": "1A-track13-card4"
+    },
+    {
+      "id": 5,
+      "text": "rice",
+      "imageKey": "1A-track13-card5",
+      "audioKey": "1A-track13-card5"
+    },
+    {
+      "id": 6,
+      "text": "noodles",
+      "imageKey": "1A-track13-card6",
+      "audioKey": "1A-track13-card6"
+    }
+  ]
+}

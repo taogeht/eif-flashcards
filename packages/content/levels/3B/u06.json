@@ -1,0 +1,57 @@
+{
+  "slug": "u06",
+  "title": "Unit 6 - Do you like ... / Does he like ...?",
+  "level": "3B",
+  "order": 6,
+  "audioKey": "3B-track6",
+  "items": [
+    {
+      "id": 1,
+      "text": "fish",
+      "imageKey": "3B-track6-card1",
+      "audioKey": "3B-track6-card1"
+    },
+    {
+      "id": 2,
+      "text": "crab",
+      "imageKey": "3B-track6-card2",
+      "audioKey": "3B-track6-card2"
+    },
+    {
+      "id": 3,
+      "text": "shrimp",
+      "imageKey": "3B-track6-card3",
+      "audioKey": "3B-track6-card3"
+    },
+    {
+      "id": 4,
+      "text": "squid",
+      "imageKey": "3B-track6-card4",
+      "audioKey": "3B-track6-card4"
+    },
+    {
+      "id": 5,
+      "text": "pork",
+      "imageKey": "3B-track6-card5",
+      "audioKey": "3B-track6-card5"
+    },
+    {
+      "id": 6,
+      "text": "beef",
+      "imageKey": "3B-track6-card6",
+      "audioKey": "3B-track6-card6"
+    },
+    {
+      "id": 7,
+      "text": "sweet potato",
+      "imageKey": "3B-track6-card7",
+      "audioKey": "3B-track6-card7"
+    },
+    {
+      "id": 8,
+      "text": "cucumber",
+      "imageKey": "3B-track6-card8",
+      "audioKey": "3B-track6-card8"
+    }
+  ]
+}

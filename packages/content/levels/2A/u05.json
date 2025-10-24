@@ -1,0 +1,57 @@
+{
+  "slug": "u05",
+  "title": "Unit 5 - It's ... They're ...",
+  "level": "2A",
+  "order": 5,
+  "audioKey": "2A-track5",
+  "items": [
+    {
+      "id": 1,
+      "text": "head",
+      "imageKey": "2A-track5-card1",
+      "audioKey": "2A-track5-card1"
+    },
+    {
+      "id": 2,
+      "text": "neck",
+      "imageKey": "2A-track5-card2",
+      "audioKey": "2A-track5-card2"
+    },
+    {
+      "id": 3,
+      "text": "tooth",
+      "imageKey": "2A-track5-card3",
+      "audioKey": "2A-track5-card3"
+    },
+    {
+      "id": 4,
+      "text": "arm",
+      "imageKey": "2A-track5-card4",
+      "audioKey": "2A-track5-card4"
+    },
+    {
+      "id": 5,
+      "text": "legs",
+      "imageKey": "2A-track5-card5",
+      "audioKey": "2A-track5-card5"
+    },
+    {
+      "id": 6,
+      "text": "knees",
+      "imageKey": "2A-track5-card6",
+      "audioKey": "2A-track5-card6"
+    },
+    {
+      "id": 7,
+      "text": "toes",
+      "imageKey": "2A-track5-card7",
+      "audioKey": "2A-track5-card7"
+    },
+    {
+      "id": 8,
+      "text": "fingers",
+      "imageKey": "2A-track5-card8",
+      "audioKey": "2A-track5-card8"
+    }
+  ]
+}

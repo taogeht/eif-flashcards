@@ -1,0 +1,105 @@
+{
+  "slug": "u06",
+  "title": "Unit 6 - They're ...",
+  "level": "2A",
+  "order": 6,
+  "audioKey": "2A-track6",
+  "items": [
+    {
+      "id": 1,
+      "text": "a doctor",
+      "imageKey": "2A-track6-card1",
+      "audioKey": "2A-track6-card1"
+    },
+    {
+      "id": 2,
+      "text": "doctors",
+      "imageKey": "2A-track6-card2",
+      "audioKey": "2A-track6-card2"
+    },
+    {
+      "id": 3,
+      "text": "a nurse",
+      "imageKey": "2A-track6-card3",
+      "audioKey": "2A-track6-card3"
+    },
+    {
+      "id": 4,
+      "text": "nurses",
+      "imageKey": "2A-track6-card4",
+      "audioKey": "2A-track6-card4"
+    },
+    {
+      "id": 5,
+      "text": "a driver",
+      "imageKey": "2A-track6-card5",
+      "audioKey": "2A-track6-card5"
+    },
+    {
+      "id": 6,
+      "text": "drivers",
+      "imageKey": "2A-track6-card6",
+      "audioKey": "2A-track6-card6"
+    },
+    {
+      "id": 7,
+      "text": "a soldier",
+      "imageKey": "2A-track6-card7",
+      "audioKey": "2A-track6-card7"
+    },
+    {
+      "id": 8,
+      "text": "soldiers",
+      "imageKey": "2A-track6-card8",
+      "audioKey": "2A-track6-card8"
+    },
+    {
+      "id": 9,
+      "text": "a teacher",
+      "imageKey": "2A-track6-card9",
+      "audioKey": "2A-track6-card9"
+    },
+    {
+      "id": 10,
+      "text": "teachers",
+      "imageKey": "2A-track6-card10",
+      "audioKey": "2A-track6-card10"
+    },
+    {
+      "id": 11,
+      "text": "a student",
+      "imageKey": "2A-track6-card11",
+      "audioKey": "2A-track6-card11"
+    },
+    {
+      "id": 12,
+      "text": "students",
+      "imageKey": "2A-track6-card12",
+      "audioKey": "2A-track6-card12"
+    },
+    {
+      "id": 13,
+      "text": "a singer",
+      "imageKey": "2A-track6-card13",
+      "audioKey": "2A-track6-card13"
+    },
+    {
+      "id": 14,
+      "text": "singers",
+      "imageKey": "2A-track6-card14",
+      "audioKey": "2A-track6-card14"
+    },
+    {
+      "id": 15,
+      "text": "a police officer",
+      "imageKey": "2A-track6-card15",
+      "audioKey": "2A-track6-card15"
+    },
+    {
+      "id": 16,
+      "text": "police officers",
+      "imageKey": "2A-track6-card16",
+      "audioKey": "2A-track6-card16"
+    }
+  ]
+}

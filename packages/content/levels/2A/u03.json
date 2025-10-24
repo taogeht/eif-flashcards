@@ -1,0 +1,57 @@
+{
+  "slug": "u03",
+  "title": "Unit 3 - He's a ... She's a ...",
+  "level": "2A",
+  "order": 3,
+  "audioKey": "2A-track3",
+  "items": [
+    {
+      "id": 1,
+      "text": "a dwarf",
+      "imageKey": "2A-track3-card1",
+      "audioKey": "2A-track3-card1"
+    },
+    {
+      "id": 2,
+      "text": "a giant",
+      "imageKey": "2A-track3-card2",
+      "audioKey": "2A-track3-card2"
+    },
+    {
+      "id": 3,
+      "text": "a king",
+      "imageKey": "2A-track3-card3",
+      "audioKey": "2A-track3-card3"
+    },
+    {
+      "id": 4,
+      "text": "a prince",
+      "imageKey": "2A-track3-card4",
+      "audioKey": "2A-track3-card4"
+    },
+    {
+      "id": 5,
+      "text": "a pirate",
+      "imageKey": "2A-track3-card5",
+      "audioKey": "2A-track3-card5"
+    },
+    {
+      "id": 6,
+      "text": "a fairy",
+      "imageKey": "2A-track3-card6",
+      "audioKey": "2A-track3-card6"
+    },
+    {
+      "id": 7,
+      "text": "a queen",
+      "imageKey": "2A-track3-card7",
+      "audioKey": "2A-track3-card7"
+    },
+    {
+      "id": 8,
+      "text": "a princess",
+      "imageKey": "2A-track3-card8",
+      "audioKey": "2A-track3-card8"
+    }
+  ]
+}

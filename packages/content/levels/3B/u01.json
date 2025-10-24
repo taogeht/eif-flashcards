@@ -1,0 +1,117 @@
+{
+  "slug": "u01",
+  "title": "Unit 1 - What time is it? It's...",
+  "level": "3B",
+  "order": 1,
+  "audioKey": "3B-track1",
+  "items": [
+    {
+      "id": 1,
+      "text": "1:00",
+      "imageKey": "3B-track1-card1",
+      "audioKey": "3B-track1-card1"
+    },
+    {
+      "id": 2,
+      "text": "2:00",
+      "imageKey": "3B-track1-card2",
+      "audioKey": "3B-track1-card2"
+    },
+    {
+      "id": 3,
+      "text": "3:00",
+      "imageKey": "3B-track1-card3",
+      "audioKey": "3B-track1-card3"
+    },
+    {
+      "id": 4,
+      "text": "4:00",
+      "imageKey": "3B-track1-card4",
+      "audioKey": "3B-track1-card4"
+    },
+    {
+      "id": 5,
+      "text": "5:00",
+      "imageKey": "3B-track1-card5",
+      "audioKey": "3B-track1-card5"
+    },
+    {
+      "id": 6,
+      "text": "6:00",
+      "imageKey": "3B-track1-card6",
+      "audioKey": "3B-track1-card6"
+    },
+    {
+      "id": 7,
+      "text": "7:00",
+      "imageKey": "3B-track1-card7",
+      "audioKey": "3B-track1-card7"
+    },
+    {
+      "id": 8,
+      "text": "8:00",
+      "imageKey": "3B-track1-card8",
+      "audioKey": "3B-track1-card8"
+    },
+    {
+      "id": 9,
+      "text": "9:00",
+      "imageKey": "3B-track1-card9",
+      "audioKey": "3B-track1-card9"
+    },
+    {
+      "id": 10,
+      "text": "10:00",
+      "imageKey": "3B-track1-card10",
+      "audioKey": "3B-track1-card10"
+    },
+    {
+      "id": 11,
+      "text": "11:00",
+      "imageKey": "3B-track1-card11",
+      "audioKey": "3B-track1-card11"
+    },
+    {
+      "id": 12,
+      "text": "12:00",
+      "imageKey": "3B-track1-card12",
+      "audioKey": "3B-track1-card12"
+    },
+    {
+      "id": 13,
+      "text": "get up",
+      "imageKey": "3B-track1-card13",
+      "audioKey": "3B-track1-card13"
+    },
+    {
+      "id": 14,
+      "text": "go to school",
+      "imageKey": "3B-track1-card14",
+      "audioKey": "3B-track1-card14"
+    },
+    {
+      "id": 15,
+      "text": "go home",
+      "imageKey": "3B-track1-card15",
+      "audioKey": "3B-track1-card15"
+    },
+    {
+      "id": 16,
+      "text": "have dinner",
+      "imageKey": "3B-track1-card16",
+      "audioKey": "3B-track1-card16"
+    },
+    {
+      "id": 17,
+      "text": "take a  bath",
+      "imageKey": "3B-track1-card17",
+      "audioKey": "3B-track1-card17"
+    },
+    {
+      "id": 18,
+      "text": "go to bed",
+      "imageKey": "3B-track1-card18",
+      "audioKey": "3B-track1-card18"
+    }
+  ]
+}

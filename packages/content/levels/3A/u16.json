@@ -1,0 +1,117 @@
+{
+  "slug": "u16",
+  "title": "Unit 16 - Let's learn more.",
+  "level": "3A",
+  "order": 16,
+  "audioKey": "3A-track16",
+  "items": [
+    {
+      "id": 1,
+      "text": "couplets",
+      "imageKey": "3A-track16-card1",
+      "audioKey": "3A-track16-card1"
+    },
+    {
+      "id": 2,
+      "text": "red envelope",
+      "imageKey": "3A-track16-card2",
+      "audioKey": "3A-track16-card2"
+    },
+    {
+      "id": 3,
+      "text": "lucky money",
+      "imageKey": "3A-track16-card3",
+      "audioKey": "3A-track16-card3"
+    },
+    {
+      "id": 4,
+      "text": "lion dance",
+      "imageKey": "3A-track16-card4",
+      "audioKey": "3A-track16-card4"
+    },
+    {
+      "id": 5,
+      "text": "dragon dance",
+      "imageKey": "3A-track16-card5",
+      "audioKey": "3A-track16-card5"
+    },
+    {
+      "id": 6,
+      "text": "firecrackers",
+      "imageKey": "3A-track16-card6",
+      "audioKey": "3A-track16-card6"
+    },
+    {
+      "id": 7,
+      "text": "reunion dinner",
+      "imageKey": "3A-track16-card7",
+      "audioKey": "3A-track16-card7"
+    },
+    {
+      "id": 8,
+      "text": "fish",
+      "imageKey": "3A-track16-card8",
+      "audioKey": "3A-track16-card8"
+    },
+    {
+      "id": 9,
+      "text": "hot pot",
+      "imageKey": "3A-track16-card9",
+      "audioKey": "3A-track16-card9"
+    },
+    {
+      "id": 10,
+      "text": "chicken",
+      "imageKey": "3A-track16-card10",
+      "audioKey": "3A-track16-card10"
+    },
+    {
+      "id": 11,
+      "text": "Chinese radish",
+      "imageKey": "3A-track16-card11",
+      "audioKey": "3A-track16-card11"
+    },
+    {
+      "id": 12,
+      "text": "rice cake",
+      "imageKey": "3A-track16-card12",
+      "audioKey": "3A-track16-card12"
+    },
+    {
+      "id": 13,
+      "text": "dumplings",
+      "imageKey": "3A-track16-card13",
+      "audioKey": "3A-track16-card13"
+    },
+    {
+      "id": 14,
+      "text": "tangerine",
+      "imageKey": "3A-track16-card14",
+      "audioKey": "3A-track16-card14"
+    },
+    {
+      "id": 15,
+      "text": "apple",
+      "imageKey": "3A-track16-card15",
+      "audioKey": "3A-track16-card15"
+    },
+    {
+      "id": 16,
+      "text": "pineapple",
+      "imageKey": "3A-track16-card16",
+      "audioKey": "3A-track16-card16"
+    },
+    {
+      "id": 17,
+      "text": "Don't cry.",
+      "imageKey": "3A-track16-card17",
+      "audioKey": "3A-track16-card17"
+    },
+    {
+      "id": 18,
+      "text": "Don't sweep the floor.",
+      "imageKey": "3A-track16-card18",
+      "audioKey": "3A-track16-card18"
+    }
+  ]
+}

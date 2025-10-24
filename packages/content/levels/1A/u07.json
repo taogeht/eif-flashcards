@@ -1,0 +1,39 @@
+{
+  "slug": "u07",
+  "title": "Unit 7 - What color is it? It's ...",
+  "level": "1A",
+  "order": 7,
+  "audioKey": "1A-track7",
+  "items": [
+    {
+      "id": 1,
+      "text": "red",
+      "imageKey": "1A-track7-card1",
+      "audioKey": "1A-track7-card1"
+    },
+    {
+      "id": 2,
+      "text": "orange",
+      "imageKey": "1A-track7-card2",
+      "audioKey": "1A-track7-card2"
+    },
+    {
+      "id": 3,
+      "text": "yellow",
+      "imageKey": "1A-track7-card3",
+      "audioKey": "1A-track7-card3"
+    },
+    {
+      "id": 4,
+      "text": "green",
+      "imageKey": "1A-track7-card4",
+      "audioKey": "1A-track7-card4"
+    },
+    {
+      "id": 5,
+      "text": "blue",
+      "imageKey": "1A-track7-card5",
+      "audioKey": "1A-track7-card5"
+    }
+  ]
+}

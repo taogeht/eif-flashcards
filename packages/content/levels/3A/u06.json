@@ -1,0 +1,33 @@
+{
+  "slug": "u06",
+  "title": "Unit 6 - The ... is in / on / under ...",
+  "level": "3A",
+  "order": 6,
+  "audioKey": "3A-track6",
+  "items": [
+    {
+      "id": 1,
+      "text": "a mat",
+      "imageKey": "3A-track6-card1",
+      "audioKey": "3A-track6-card1"
+    },
+    {
+      "id": 2,
+      "text": "a switch",
+      "imageKey": "3A-track6-card2",
+      "audioKey": "3A-track6-card2"
+    },
+    {
+      "id": 3,
+      "text": "a box",
+      "imageKey": "3A-track6-card3",
+      "audioKey": "3A-track6-card3"
+    },
+    {
+      "id": 4,
+      "text": "a bed",
+      "imageKey": "3A-track6-card4",
+      "audioKey": "3A-track6-card4"
+    }
+  ]
+}

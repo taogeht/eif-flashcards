@@ -1,0 +1,45 @@
+{
+  "slug": "u10",
+  "title": "Unit 10 - Let's go ...",
+  "level": "1B",
+  "order": 10,
+  "audioKey": "1B-track10",
+  "items": [
+    {
+      "id": 1,
+      "text": "playground",
+      "imageKey": "1B-track10-card1",
+      "audioKey": "1B-track10-card1"
+    },
+    {
+      "id": 2,
+      "text": "park",
+      "imageKey": "1B-track10-card2",
+      "audioKey": "1B-track10-card2"
+    },
+    {
+      "id": 3,
+      "text": "classroom",
+      "imageKey": "1B-track10-card3",
+      "audioKey": "1B-track10-card3"
+    },
+    {
+      "id": 4,
+      "text": "bathroom",
+      "imageKey": "1B-track10-card4",
+      "audioKey": "1B-track10-card4"
+    },
+    {
+      "id": 5,
+      "text": "school",
+      "imageKey": "1B-track10-card5",
+      "audioKey": "1B-track10-card5"
+    },
+    {
+      "id": 6,
+      "text": "home",
+      "imageKey": "1B-track10-card6",
+      "audioKey": "1B-track10-card6"
+    }
+  ]
+}

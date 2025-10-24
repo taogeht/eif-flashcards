@@ -1,0 +1,45 @@
+{
+  "slug": "u13",
+  "title": "Unit 13 - What do you do on the weekend?",
+  "level": "3A",
+  "order": 13,
+  "audioKey": "3A-track13",
+  "items": [
+    {
+      "id": 1,
+      "text": "do homework",
+      "imageKey": "3A-track13-card1",
+      "audioKey": "3A-track13-card1"
+    },
+    {
+      "id": 2,
+      "text": "play computer games",
+      "imageKey": "3A-track13-card2",
+      "audioKey": "3A-track13-card2"
+    },
+    {
+      "id": 3,
+      "text": "listen to music",
+      "imageKey": "3A-track13-card3",
+      "audioKey": "3A-track13-card3"
+    },
+    {
+      "id": 4,
+      "text": "go swimming",
+      "imageKey": "3A-track13-card4",
+      "audioKey": "3A-track13-card4"
+    },
+    {
+      "id": 5,
+      "text": "go shopping",
+      "imageKey": "3A-track13-card5",
+      "audioKey": "3A-track13-card5"
+    },
+    {
+      "id": 6,
+      "text": "go roller skating",
+      "imageKey": "3A-track13-card6",
+      "audioKey": "3A-track13-card6"
+    }
+  ]
+}

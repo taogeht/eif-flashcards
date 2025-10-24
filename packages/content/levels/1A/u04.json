@@ -1,0 +1,27 @@
+{
+  "slug": "u04",
+  "title": "Unit 4 - Let's learn more.",
+  "level": "1A",
+  "order": 4,
+  "audioKey": "1A-track4",
+  "items": [
+    {
+      "id": 1,
+      "text": "Good morning",
+      "imageKey": "1A-track4-card1",
+      "audioKey": "1A-track4-card1"
+    },
+    {
+      "id": 2,
+      "text": "Good afternoon",
+      "imageKey": "1A-track4-card2",
+      "audioKey": "1A-track4-card2"
+    },
+    {
+      "id": 3,
+      "text": "Good night",
+      "imageKey": "1A-track4-card3",
+      "audioKey": "1A-track4-card3"
+    }
+  ]
+}

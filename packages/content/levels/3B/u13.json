@@ -1,0 +1,51 @@
+{
+  "slug": "u13",
+  "title": "Unit 13 - Put on ...",
+  "level": "3B",
+  "order": 13,
+  "audioKey": "3B-track13",
+  "items": [
+    {
+      "id": 1,
+      "text": "hat",
+      "imageKey": "3B-track13-card1",
+      "audioKey": "3B-track13-card1"
+    },
+    {
+      "id": 2,
+      "text": "swimming cap",
+      "imageKey": "3B-track13-card2",
+      "audioKey": "3B-track13-card2"
+    },
+    {
+      "id": 3,
+      "text": "swimsuit",
+      "imageKey": "3B-track13-card3",
+      "audioKey": "3B-track13-card3"
+    },
+    {
+      "id": 4,
+      "text": "sunscreen",
+      "imageKey": "3B-track13-card4",
+      "audioKey": "3B-track13-card4"
+    },
+    {
+      "id": 5,
+      "text": "swimming trunks",
+      "imageKey": "3B-track13-card5",
+      "audioKey": "3B-track13-card5"
+    },
+    {
+      "id": 6,
+      "text": "sunglasses",
+      "imageKey": "3B-track13-card6",
+      "audioKey": "3B-track13-card6"
+    },
+    {
+      "id": 7,
+      "text": "goggles",
+      "imageKey": "3B-track13-card7",
+      "audioKey": "3B-track13-card7"
+    }
+  ]
+}

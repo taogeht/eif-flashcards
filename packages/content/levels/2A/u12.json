@@ -1,0 +1,189 @@
+{
+  "slug": "u12",
+  "title": "Unit 12 - Let's learn more.",
+  "level": "2A",
+  "order": 12,
+  "audioKey": "2A-track12",
+  "items": [
+    {
+      "id": 1,
+      "text": "one",
+      "imageKey": "2A-track12-card1",
+      "audioKey": "2A-track12-card1"
+    },
+    {
+      "id": 2,
+      "text": "two",
+      "imageKey": "2A-track12-card2",
+      "audioKey": "2A-track12-card2"
+    },
+    {
+      "id": 3,
+      "text": "three",
+      "imageKey": "2A-track12-card3",
+      "audioKey": "2A-track12-card3"
+    },
+    {
+      "id": 4,
+      "text": "four",
+      "imageKey": "2A-track12-card4",
+      "audioKey": "2A-track12-card4"
+    },
+    {
+      "id": 5,
+      "text": "five",
+      "imageKey": "2A-track12-card5",
+      "audioKey": "2A-track12-card5"
+    },
+    {
+      "id": 6,
+      "text": "six",
+      "imageKey": "2A-track12-card6",
+      "audioKey": "2A-track12-card6"
+    },
+    {
+      "id": 7,
+      "text": "seven",
+      "imageKey": "2A-track12-card7",
+      "audioKey": "2A-track12-card7"
+    },
+    {
+      "id": 8,
+      "text": "eight",
+      "imageKey": "2A-track12-card8",
+      "audioKey": "2A-track12-card8"
+    },
+    {
+      "id": 9,
+      "text": "nine",
+      "imageKey": "2A-track12-card9",
+      "audioKey": "2A-track12-card9"
+    },
+    {
+      "id": 10,
+      "text": "ten",
+      "imageKey": "2A-track12-card10",
+      "audioKey": "2A-track12-card10"
+    },
+    {
+      "id": 11,
+      "text": "eleven",
+      "imageKey": "2A-track12-card11",
+      "audioKey": "2A-track12-card11"
+    },
+    {
+      "id": 12,
+      "text": "twelve",
+      "imageKey": "2A-track12-card12",
+      "audioKey": "2A-track12-card12"
+    },
+    {
+      "id": 13,
+      "text": "thirteen",
+      "imageKey": "2A-track12-card13",
+      "audioKey": "2A-track12-card13"
+    },
+    {
+      "id": 14,
+      "text": "fourteen",
+      "imageKey": "2A-track12-card14",
+      "audioKey": "2A-track12-card14"
+    },
+    {
+      "id": 15,
+      "text": "fifteen",
+      "imageKey": "2A-track12-card15",
+      "audioKey": "2A-track12-card15"
+    },
+    {
+      "id": 16,
+      "text": "sixteen",
+      "imageKey": "2A-track12-card16",
+      "audioKey": "2A-track12-card16"
+    },
+    {
+      "id": 17,
+      "text": "seventeen",
+      "imageKey": "2A-track12-card17",
+      "audioKey": "2A-track12-card17"
+    },
+    {
+      "id": 18,
+      "text": "eighteen",
+      "imageKey": "2A-track12-card18",
+      "audioKey": "2A-track12-card18"
+    },
+    {
+      "id": 19,
+      "text": "nineteen",
+      "imageKey": "2A-track12-card19",
+      "audioKey": "2A-track12-card19"
+    },
+    {
+      "id": 20,
+      "text": "twenty",
+      "imageKey": "2A-track12-card20",
+      "audioKey": "2A-track12-card20"
+    },
+    {
+      "id": 21,
+      "text": "twenty-one",
+      "imageKey": "2A-track12-card21",
+      "audioKey": "2A-track12-card21"
+    },
+    {
+      "id": 22,
+      "text": "twenty-two",
+      "imageKey": "2A-track12-card22",
+      "audioKey": "2A-track12-card22"
+    },
+    {
+      "id": 23,
+      "text": "twenty-three",
+      "imageKey": "2A-track12-card23",
+      "audioKey": "2A-track12-card23"
+    },
+    {
+      "id": 24,
+      "text": "twenty-four",
+      "imageKey": "2A-track12-card24",
+      "audioKey": "2A-track12-card24"
+    },
+    {
+      "id": 25,
+      "text": "twenty-five",
+      "imageKey": "2A-track12-card25",
+      "audioKey": "2A-track12-card25"
+    },
+    {
+      "id": 26,
+      "text": "twenty-six",
+      "imageKey": "2A-track12-card26",
+      "audioKey": "2A-track12-card26"
+    },
+    {
+      "id": 27,
+      "text": "twenty-seven",
+      "imageKey": "2A-track12-card27",
+      "audioKey": "2A-track12-card27"
+    },
+    {
+      "id": 28,
+      "text": "twenty-eight",
+      "imageKey": "2A-track12-card28",
+      "audioKey": "2A-track12-card28"
+    },
+    {
+      "id": 29,
+      "text": "twenty-nine",
+      "imageKey": "2A-track12-card29",
+      "audioKey": "2A-track12-card29"
+    },
+    {
+      "id": 30,
+      "text": "thirty",
+      "imageKey": "2A-track12-card30",
+      "audioKey": "2A-track12-card30"
+    }
+  ]
+}

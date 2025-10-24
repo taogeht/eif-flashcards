@@ -1,0 +1,51 @@
+{
+  "slug": "u01",
+  "title": "Unit 1 - It's ... It has ...",
+  "level": "3A",
+  "order": 1,
+  "audioKey": "3A-track1",
+  "items": [
+    {
+      "id": 1,
+      "text": "a camel",
+      "imageKey": "3A-track1-card1",
+      "audioKey": "3A-track1-card1"
+    },
+    {
+      "id": 2,
+      "text": "an alligator",
+      "imageKey": "3A-track1-card2",
+      "audioKey": "3A-track1-card2"
+    },
+    {
+      "id": 3,
+      "text": "a frog",
+      "imageKey": "3A-track1-card3",
+      "audioKey": "3A-track1-card3"
+    },
+    {
+      "id": 4,
+      "text": "a rhino",
+      "imageKey": "3A-track1-card4",
+      "audioKey": "3A-track1-card4"
+    },
+    {
+      "id": 5,
+      "text": "a gorilla",
+      "imageKey": "3A-track1-card5",
+      "audioKey": "3A-track1-card5"
+    },
+    {
+      "id": 6,
+      "text": "an ostrich",
+      "imageKey": "3A-track1-card6",
+      "audioKey": "3A-track1-card6"
+    },
+    {
+      "id": 7,
+      "text": "a snake",
+      "imageKey": "3A-track1-card7",
+      "audioKey": "3A-track1-card7"
+    }
+  ]
+}

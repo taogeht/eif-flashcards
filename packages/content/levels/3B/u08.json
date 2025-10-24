@@ -1,0 +1,21 @@
+{
+  "slug": "u08",
+  "title": "Unit 8 - Let's learn more",
+  "level": "3B",
+  "order": 8,
+  "audioKey": "3B-track8",
+  "items": [
+    {
+      "id": 1,
+      "text": "carnations",
+      "imageKey": "3B-track8-card1",
+      "audioKey": "3B-track8-card1"
+    },
+    {
+      "id": 2,
+      "text": "Mother's Day",
+      "imageKey": "3B-track8-card2",
+      "audioKey": "3B-track8-card2"
+    }
+  ]
+}

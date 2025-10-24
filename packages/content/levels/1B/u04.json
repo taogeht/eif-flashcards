@@ -1,0 +1,33 @@
+{
+  "slug": "u04",
+  "title": "Unit 4 - Let's learn more.",
+  "level": "1B",
+  "order": 4,
+  "audioKey": "1B-track4",
+  "items": [
+    {
+      "id": 1,
+      "text": "nod your head",
+      "imageKey": "1B-track4-card1",
+      "audioKey": "1B-track4-card1"
+    },
+    {
+      "id": 2,
+      "text": "circle your arms",
+      "imageKey": "1B-track4-card2",
+      "audioKey": "1B-track4-card2"
+    },
+    {
+      "id": 3,
+      "text": "turn around",
+      "imageKey": "1B-track4-card3",
+      "audioKey": "1B-track4-card3"
+    },
+    {
+      "id": 4,
+      "text": "jump high",
+      "imageKey": "1B-track4-card4",
+      "audioKey": "1B-track4-card4"
+    }
+  ]
+}

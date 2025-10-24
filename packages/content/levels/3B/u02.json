@@ -1,0 +1,45 @@
+{
+  "slug": "u02",
+  "title": "Unit 2 - How much is it?  It's ... dollars.",
+  "level": "3B",
+  "order": 2,
+  "audioKey": "3B-track2",
+  "items": [
+    {
+      "id": 1,
+      "text": "stapler",
+      "imageKey": "3B-track2-card1",
+      "audioKey": "3B-track2-card1"
+    },
+    {
+      "id": 2,
+      "text": "folder",
+      "imageKey": "3B-track2-card2",
+      "audioKey": "3B-track2-card2"
+    },
+    {
+      "id": 3,
+      "text": "magazine",
+      "imageKey": "3B-track2-card3",
+      "audioKey": "3B-track2-card3"
+    },
+    {
+      "id": 4,
+      "text": "piggy bank",
+      "imageKey": "3B-track2-card4",
+      "audioKey": "3B-track2-card4"
+    },
+    {
+      "id": 5,
+      "text": "dictionary",
+      "imageKey": "3B-track2-card5",
+      "audioKey": "3B-track2-card5"
+    },
+    {
+      "id": 6,
+      "text": "music box",
+      "imageKey": "3B-track2-card6",
+      "audioKey": "3B-track2-card6"
+    }
+  ]
+}

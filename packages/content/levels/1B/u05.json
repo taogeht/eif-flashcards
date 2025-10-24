@@ -1,0 +1,45 @@
+{
+  "slug": "u05",
+  "title": "Unit 5 - Is this your ...?",
+  "level": "1B",
+  "order": 5,
+  "audioKey": "1B-track5",
+  "items": [
+    {
+      "id": 1,
+      "text": "a cap",
+      "imageKey": "1B-track5-card1",
+      "audioKey": "1B-track5-card1"
+    },
+    {
+      "id": 2,
+      "text": "a jacket",
+      "imageKey": "1B-track5-card2",
+      "audioKey": "1B-track5-card2"
+    },
+    {
+      "id": 3,
+      "text": "a shirt",
+      "imageKey": "1B-track5-card3",
+      "audioKey": "1B-track5-card3"
+    },
+    {
+      "id": 4,
+      "text": "a T-shirt",
+      "imageKey": "1B-track5-card4",
+      "audioKey": "1B-track5-card4"
+    },
+    {
+      "id": 5,
+      "text": "a skirt",
+      "imageKey": "1B-track5-card5",
+      "audioKey": "1B-track5-card5"
+    },
+    {
+      "id": 6,
+      "text": "a dress",
+      "imageKey": "1B-track5-card6",
+      "audioKey": "1B-track5-card6"
+    }
+  ]
+}

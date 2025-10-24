@@ -1,0 +1,45 @@
+{
+  "slug": "u09",
+  "title": "Unit 9 - Do you want to ...?",
+  "level": "3B",
+  "order": 9,
+  "audioKey": "3B-track9",
+  "items": [
+    {
+      "id": 1,
+      "text": "play frisbee",
+      "imageKey": "3B-track9-card1",
+      "audioKey": "3B-track9-card1"
+    },
+    {
+      "id": 2,
+      "text": "play hopscotch",
+      "imageKey": "3B-track9-card2",
+      "audioKey": "3B-track9-card2"
+    },
+    {
+      "id": 3,
+      "text": "play hide and seek",
+      "imageKey": "3B-track9-card3",
+      "audioKey": "3B-track9-card3"
+    },
+    {
+      "id": 4,
+      "text": "blow bubbles",
+      "imageKey": "3B-track9-card4",
+      "audioKey": "3B-track9-card4"
+    },
+    {
+      "id": 5,
+      "text": "have a picnic",
+      "imageKey": "3B-track9-card5",
+      "audioKey": "3B-track9-card5"
+    },
+    {
+      "id": 6,
+      "text": "walk a dog",
+      "imageKey": "3B-track9-card6",
+      "audioKey": "3B-track9-card6"
+    }
+  ]
+}

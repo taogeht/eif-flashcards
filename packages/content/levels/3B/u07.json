@@ -1,0 +1,51 @@
+{
+  "slug": "u07",
+  "title": "Unit 7 - Can you pass me the ... ?",
+  "level": "3B",
+  "order": 7,
+  "audioKey": "3B-track7",
+  "items": [
+    {
+      "id": 1,
+      "text": "sugar",
+      "imageKey": "3B-track7-card1",
+      "audioKey": "3B-track7-card1"
+    },
+    {
+      "id": 2,
+      "text": "salt",
+      "imageKey": "3B-track7-card2",
+      "audioKey": "3B-track7-card2"
+    },
+    {
+      "id": 3,
+      "text": "pepper",
+      "imageKey": "3B-track7-card3",
+      "audioKey": "3B-track7-card3"
+    },
+    {
+      "id": 4,
+      "text": "honey",
+      "imageKey": "3B-track7-card4",
+      "audioKey": "3B-track7-card4"
+    },
+    {
+      "id": 5,
+      "text": "oil",
+      "imageKey": "3B-track7-card5",
+      "audioKey": "3B-track7-card5"
+    },
+    {
+      "id": 6,
+      "text": "ketchup",
+      "imageKey": "3B-track7-card6",
+      "audioKey": "3B-track7-card6"
+    },
+    {
+      "id": 7,
+      "text": "soy sauce",
+      "imageKey": "3B-track7-card7",
+      "audioKey": "3B-track7-card7"
+    }
+  ]
+}

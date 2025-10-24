@@ -1,0 +1,51 @@
+{
+  "slug": "u11",
+  "title": "Unit 11 - How's the weather? It's ...",
+  "level": "3B",
+  "order": 11,
+  "audioKey": "3B-track11",
+  "items": [
+    {
+      "id": 1,
+      "text": "sunny",
+      "imageKey": "3B-track11-card1",
+      "audioKey": "3B-track11-card1"
+    },
+    {
+      "id": 2,
+      "text": "cloudy",
+      "imageKey": "3B-track11-card2",
+      "audioKey": "3B-track11-card2"
+    },
+    {
+      "id": 3,
+      "text": "windy",
+      "imageKey": "3B-track11-card3",
+      "audioKey": "3B-track11-card3"
+    },
+    {
+      "id": 4,
+      "text": "rainy",
+      "imageKey": "3B-track11-card4",
+      "audioKey": "3B-track11-card4"
+    },
+    {
+      "id": 5,
+      "text": "snowy",
+      "imageKey": "3B-track11-card5",
+      "audioKey": "3B-track11-card5"
+    },
+    {
+      "id": 6,
+      "text": "stormy",
+      "imageKey": "3B-track11-card6",
+      "audioKey": "3B-track11-card6"
+    },
+    {
+      "id": 7,
+      "text": "typhoon",
+      "imageKey": "3B-track11-card7",
+      "audioKey": "3B-track11-card7"
+    }
+  ]
+}

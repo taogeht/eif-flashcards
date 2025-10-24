@@ -1,0 +1,45 @@
+{
+  "slug": "u13",
+  "title": "Unit 13 - Where are you ? I'm in the ...",
+  "level": "2A",
+  "order": 13,
+  "audioKey": "2A-track13",
+  "items": [
+    {
+      "id": 1,
+      "text": "living room",
+      "imageKey": "2A-track13-card1",
+      "audioKey": "2A-track13-card1"
+    },
+    {
+      "id": 2,
+      "text": "bedroom",
+      "imageKey": "2A-track13-card2",
+      "audioKey": "2A-track13-card2"
+    },
+    {
+      "id": 3,
+      "text": "bathroom",
+      "imageKey": "2A-track13-card3",
+      "audioKey": "2A-track13-card3"
+    },
+    {
+      "id": 4,
+      "text": "kitchen",
+      "imageKey": "2A-track13-card4",
+      "audioKey": "2A-track13-card4"
+    },
+    {
+      "id": 5,
+      "text": "study",
+      "imageKey": "2A-track13-card5",
+      "audioKey": "2A-track13-card5"
+    },
+    {
+      "id": 6,
+      "text": "dining room",
+      "imageKey": "2A-track13-card6",
+      "audioKey": "2A-track13-card6"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "slug": "u01",
+  "title": "Unit 1 - I'm ...",
+  "level": "1A",
+  "order": 1,
+  "audioKey": "1A-track1",
+  "items": [
+    {
+      "id": 1,
+      "text": "a boy",
+      "imageKey": "1A-track1-card1",
+      "audioKey": "1A-track1-card1"
+    },
+    {
+      "id": 2,
+      "text": "a girl",
+      "imageKey": "1A-track1-card2",
+      "audioKey": "1A-track1-card2"
+    },
+    {
+      "id": 3,
+      "text": "a teacher",
+      "imageKey": "1A-track1-card3",
+      "audioKey": "1A-track1-card3"
+    }
+  ]
+}

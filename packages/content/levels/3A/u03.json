@@ -1,0 +1,45 @@
+{
+  "slug": "u03",
+  "title": "Unit 3 - I have ... I can ...",
+  "level": "3A",
+  "order": 3,
+  "audioKey": "3A-track3",
+  "items": [
+    {
+      "id": 1,
+      "text": "a rag",
+      "imageKey": "3A-track3-card1",
+      "audioKey": "3A-track3-card1"
+    },
+    {
+      "id": 2,
+      "text": "a broom",
+      "imageKey": "3A-track3-card2",
+      "audioKey": "3A-track3-card2"
+    },
+    {
+      "id": 3,
+      "text": "a mop",
+      "imageKey": "3A-track3-card3",
+      "audioKey": "3A-track3-card3"
+    },
+    {
+      "id": 4,
+      "text": "a camera",
+      "imageKey": "3A-track3-card4",
+      "audioKey": "3A-track3-card4"
+    },
+    {
+      "id": 5,
+      "text": "a knife",
+      "imageKey": "3A-track3-card5",
+      "audioKey": "3A-track3-card5"
+    },
+    {
+      "id": 6,
+      "text": "chopsticks",
+      "imageKey": "3A-track3-card6",
+      "audioKey": "3A-track3-card6"
+    }
+  ]
+}

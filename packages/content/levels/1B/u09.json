@@ -1,0 +1,45 @@
+{
+  "slug": "u09",
+  "title": "Unit 9 - Do you want ...?",
+  "level": "1B",
+  "order": 9,
+  "audioKey": "1B-track9",
+  "items": [
+    {
+      "id": 1,
+      "text": "a hamburger",
+      "imageKey": "1B-track9-card1",
+      "audioKey": "1B-track9-card1"
+    },
+    {
+      "id": 2,
+      "text": "pizza",
+      "imageKey": "1B-track9-card2",
+      "audioKey": "1B-track9-card2"
+    },
+    {
+      "id": 3,
+      "text": "French fries",
+      "imageKey": "1B-track9-card3",
+      "audioKey": "1B-track9-card3"
+    },
+    {
+      "id": 4,
+      "text": "fried chicken",
+      "imageKey": "1B-track9-card4",
+      "audioKey": "1B-track9-card4"
+    },
+    {
+      "id": 5,
+      "text": "corn soup",
+      "imageKey": "1B-track9-card5",
+      "audioKey": "1B-track9-card5"
+    },
+    {
+      "id": 6,
+      "text": "juice",
+      "imageKey": "1B-track9-card6",
+      "audioKey": "1B-track9-card6"
+    }
+  ]
+}

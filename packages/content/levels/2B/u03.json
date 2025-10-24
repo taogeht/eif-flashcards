@@ -1,0 +1,57 @@
+{
+  "slug": "u03",
+  "title": "Unit 3 - What is it?  What are they?",
+  "level": "2B",
+  "order": 3,
+  "audioKey": "2B-track3",
+  "items": [
+    {
+      "id": 1,
+      "text": "a cherry",
+      "imageKey": "2B-track3-card1",
+      "audioKey": "2B-track3-card1"
+    },
+    {
+      "id": 2,
+      "text": "a strawberry",
+      "imageKey": "2B-track3-card2",
+      "audioKey": "2B-track3-card2"
+    },
+    {
+      "id": 3,
+      "text": "a bellfruit",
+      "imageKey": "2B-track3-card3",
+      "audioKey": "2B-track3-card3"
+    },
+    {
+      "id": 4,
+      "text": "a starfruit",
+      "imageKey": "2B-track3-card4",
+      "audioKey": "2B-track3-card4"
+    },
+    {
+      "id": 5,
+      "text": "a pear",
+      "imageKey": "2B-track3-card5",
+      "audioKey": "2B-track3-card5"
+    },
+    {
+      "id": 6,
+      "text": "a peach",
+      "imageKey": "2B-track3-card6",
+      "audioKey": "2B-track3-card6"
+    },
+    {
+      "id": 7,
+      "text": "an orange",
+      "imageKey": "2B-track3-card7",
+      "audioKey": "2B-track3-card7"
+    },
+    {
+      "id": 8,
+      "text": "grapes",
+      "imageKey": "2B-track3-card8",
+      "audioKey": "2B-track3-card8"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "u15",
+  "title": "Unit 15 - Where are you going? I'm going to ...",
+  "level": "2B",
+  "order": 15,
+  "audioKey": "2B-track15",
+  "items": [
+    {
+      "id": 1,
+      "text": "zoo",
+      "imageKey": "2B-track15-card1",
+      "audioKey": "2B-track15-card1"
+    },
+    {
+      "id": 2,
+      "text": "beach",
+      "imageKey": "2B-track15-card2",
+      "audioKey": "2B-track15-card2"
+    },
+    {
+      "id": 3,
+      "text": "restaurant",
+      "imageKey": "2B-track15-card3",
+      "audioKey": "2B-track15-card3"
+    },
+    {
+      "id": 4,
+      "text": "bookstore",
+      "imageKey": "2B-track15-card4",
+      "audioKey": "2B-track15-card4"
+    },
+    {
+      "id": 5,
+      "text": "convenience store",
+      "imageKey": "2B-track15-card5",
+      "audioKey": "2B-track15-card5"
+    },
+    {
+      "id": 6,
+      "text": "toy store",
+      "imageKey": "2B-track15-card6",
+      "audioKey": "2B-track15-card6"
+    },
+    {
+      "id": 7,
+      "text": "department store",
+      "imageKey": "2B-track15-card7",
+      "audioKey": "2B-track15-card7"
+    }
+  ]
+}

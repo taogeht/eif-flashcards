@@ -1,0 +1,45 @@
+{
+  "slug": "u14",
+  "title": "Unit 14 - He's / She's ... ing.",
+  "level": "1B",
+  "order": 14,
+  "audioKey": "1B-track14",
+  "items": [
+    {
+      "id": 1,
+      "text": "eat",
+      "imageKey": "1B-track14-card1",
+      "audioKey": "1B-track14-card1"
+    },
+    {
+      "id": 2,
+      "text": "sleep",
+      "imageKey": "1B-track14-card2",
+      "audioKey": "1B-track14-card2"
+    },
+    {
+      "id": 3,
+      "text": "drink",
+      "imageKey": "1B-track14-card3",
+      "audioKey": "1B-track14-card3"
+    },
+    {
+      "id": 4,
+      "text": "sing",
+      "imageKey": "1B-track14-card4",
+      "audioKey": "1B-track14-card4"
+    },
+    {
+      "id": 5,
+      "text": "swim",
+      "imageKey": "1B-track14-card5",
+      "audioKey": "1B-track14-card5"
+    },
+    {
+      "id": 6,
+      "text": "run",
+      "imageKey": "1B-track14-card6",
+      "audioKey": "1B-track14-card6"
+    }
+  ]
+}

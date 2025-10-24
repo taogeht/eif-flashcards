@@ -1,0 +1,45 @@
+{
+  "slug": "u13",
+  "title": "Unit 13 - What do you do every day? I ... every day.",
+  "level": "2B",
+  "order": 13,
+  "audioKey": "2B-track13",
+  "items": [
+    {
+      "id": 1,
+      "text": "get up",
+      "imageKey": "2B-track13-card1",
+      "audioKey": "2B-track13-card1"
+    },
+    {
+      "id": 2,
+      "text": "go to school",
+      "imageKey": "2B-track13-card2",
+      "audioKey": "2B-track13-card2"
+    },
+    {
+      "id": 3,
+      "text": "take a bath",
+      "imageKey": "2B-track13-card3",
+      "audioKey": "2B-track13-card3"
+    },
+    {
+      "id": 4,
+      "text": "brush my teeth",
+      "imageKey": "2B-track13-card4",
+      "audioKey": "2B-track13-card4"
+    },
+    {
+      "id": 5,
+      "text": "comb my hair",
+      "imageKey": "2B-track13-card5",
+      "audioKey": "2B-track13-card5"
+    },
+    {
+      "id": 6,
+      "text": "wash my face",
+      "imageKey": "2B-track13-card6",
+      "audioKey": "2B-track13-card6"
+    }
+  ]
+}

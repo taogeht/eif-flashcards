@@ -1,0 +1,93 @@
+{
+  "slug": "u11",
+  "title": "Unit 11 - Which one do you want ... or ...?",
+  "level": "2A",
+  "order": 11,
+  "audioKey": "2A-track11",
+  "items": [
+    {
+      "id": 1,
+      "text": "jam",
+      "imageKey": "2A-track11-card1",
+      "audioKey": "2A-track11-card1"
+    },
+    {
+      "id": 2,
+      "text": "peanut butter",
+      "imageKey": "2A-track11-card2",
+      "audioKey": "2A-track11-card2"
+    },
+    {
+      "id": 3,
+      "text": "an egg",
+      "imageKey": "2A-track11-card3",
+      "audioKey": "2A-track11-card3"
+    },
+    {
+      "id": 4,
+      "text": "ham",
+      "imageKey": "2A-track11-card4",
+      "audioKey": "2A-track11-card4"
+    },
+    {
+      "id": 5,
+      "text": "a sandwich",
+      "imageKey": "2A-track11-card5",
+      "audioKey": "2A-track11-card5"
+    },
+    {
+      "id": 6,
+      "text": "salad",
+      "imageKey": "2A-track11-card6",
+      "audioKey": "2A-track11-card6"
+    },
+    {
+      "id": 7,
+      "text": "a lollipop",
+      "imageKey": "2A-track11-card7",
+      "audioKey": "2A-track11-card7"
+    },
+    {
+      "id": 8,
+      "text": "chocolate",
+      "imageKey": "2A-track11-card8",
+      "audioKey": "2A-track11-card8"
+    },
+    {
+      "id": 9,
+      "text": "a cookie",
+      "imageKey": "2A-track11-card9",
+      "audioKey": "2A-track11-card9"
+    },
+    {
+      "id": 10,
+      "text": "potato chips",
+      "imageKey": "2A-track11-card10",
+      "audioKey": "2A-track11-card10"
+    },
+    {
+      "id": 11,
+      "text": "pudding",
+      "imageKey": "2A-track11-card11",
+      "audioKey": "2A-track11-card11"
+    },
+    {
+      "id": 12,
+      "text": "yogurt",
+      "imageKey": "2A-track11-card12",
+      "audioKey": "2A-track11-card12"
+    },
+    {
+      "id": 13,
+      "text": "tea",
+      "imageKey": "2A-track11-card13",
+      "audioKey": "2A-track11-card13"
+    },
+    {
+      "id": 14,
+      "text": "coffee",
+      "imageKey": "2A-track11-card14",
+      "audioKey": "2A-track11-card14"
+    }
+  ]
+}

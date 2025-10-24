@@ -1,0 +1,33 @@
+{
+  "slug": "u03",
+  "title": "Unit 3 - It's a ...",
+  "level": "1A",
+  "order": 3,
+  "audioKey": "1A-track3",
+  "items": [
+    {
+      "id": 1,
+      "text": "a bowl",
+      "imageKey": "1A-track3-card1",
+      "audioKey": "1A-track3-card1"
+    },
+    {
+      "id": 2,
+      "text": "a spoon",
+      "imageKey": "1A-track3-card2",
+      "audioKey": "1A-track3-card2"
+    },
+    {
+      "id": 3,
+      "text": "a cup",
+      "imageKey": "1A-track3-card3",
+      "audioKey": "1A-track3-card3"
+    },
+    {
+      "id": 4,
+      "text": "a water bottle",
+      "imageKey": "1A-track3-card4",
+      "audioKey": "1A-track3-card4"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "u15",
+  "title": "Unit 15 - What number is this? It's number ...",
+  "level": "1A",
+  "order": 15,
+  "audioKey": "1A-track15",
+  "items": [
+    {
+      "id": 1,
+      "text": "1 one",
+      "imageKey": "1A-track15-card1",
+      "audioKey": "1A-track15-card1"
+    },
+    {
+      "id": 2,
+      "text": "2 two",
+      "imageKey": "1A-track15-card2",
+      "audioKey": "1A-track15-card2"
+    },
+    {
+      "id": 3,
+      "text": "3 three",
+      "imageKey": "1A-track15-card3",
+      "audioKey": "1A-track15-card3"
+    },
+    {
+      "id": 4,
+      "text": "4 four",
+      "imageKey": "1A-track15-card4",
+      "audioKey": "1A-track15-card4"
+    },
+    {
+      "id": 5,
+      "text": "5 five",
+      "imageKey": "1A-track15-card5",
+      "audioKey": "1A-track15-card5"
+    },
+    {
+      "id": 6,
+      "text": "6 six",
+      "imageKey": "1A-track15-card6",
+      "audioKey": "1A-track15-card6"
+    },
+    {
+      "id": 7,
+      "text": "7 seven",
+      "imageKey": "1A-track15-card7",
+      "audioKey": "1A-track15-card7"
+    },
+    {
+      "id": 8,
+      "text": "8 eight",
+      "imageKey": "1A-track15-card8",
+      "audioKey": "1A-track15-card8"
+    },
+    {
+      "id": 9,
+      "text": "9 nine",
+      "imageKey": "1A-track15-card9",
+      "audioKey": "1A-track15-card9"
+    },
+    {
+      "id": 10,
+      "text": "10 ten",
+      "imageKey": "1A-track15-card10",
+      "audioKey": "1A-track15-card10"
+    }
+  ]
+}
