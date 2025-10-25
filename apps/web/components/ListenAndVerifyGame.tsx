@@ -159,17 +159,6 @@ export default function ListenAndVerifyGame({ unit, audio, images }: ListenAndVe
     setTimeout(generateQuestion, 1500)
   }
 
-  const resetGame = () => {
-    setScore(0)
-    setTotalQuestions(0)
-    attemptsRef.current = { total: 0, correct: 0 }
-    generateQuestion()
-  }
-
-  if (!displayedCard || cards.length === 0) {
-    return <p className="text-center text-slate-600">No cards available for this unit yet.</p>
-  }
-
   const finalizeSession = useCallback(async () => {
     const info = sessionRef.current
     if (!info.id) {
@@ -231,6 +220,17 @@ export default function ListenAndVerifyGame({ unit, audio, images }: ListenAndVe
       void finalizeSession()
     }
   }, [openSession, finalizeSession])
+
+  const resetGame = () => {
+    setScore(0)
+    setTotalQuestions(0)
+    attemptsRef.current = { total: 0, correct: 0 }
+    generateQuestion()
+  }
+
+  if (!displayedCard || cards.length === 0) {
+    return <p className="text-center text-slate-600">No cards available for this unit yet.</p>
+  }
 
   return (
     <div className="mx-auto max-w-2xl p-4">
