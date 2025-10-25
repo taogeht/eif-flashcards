@@ -49,6 +49,7 @@ export default function MemoryGame({ unit, audio, images }: MemoryGameProps) {
     startedAt: null
   })
   const roundsRef = useRef(0)
+  const attemptsRef = useRef<{ total: number; correct: number }>({ total: 0, correct: 0 })
 
   const proudVoiceover = audio[`${unit.level}-voiceover-proud`]
 
@@ -95,6 +96,7 @@ export default function MemoryGame({ unit, audio, images }: MemoryGameProps) {
     setFlippedIds([])
     setMatches(0)
     setIsChecking(false)
+    attemptsRef.current = { total: 0, correct: 0 }
   }
 
   useEffect(() => {
@@ -108,10 +110,18 @@ export default function MemoryGame({ unit, audio, images }: MemoryGameProps) {
       if (proudVoiceover) {
         new Audio(proudVoiceover).play().catch((error) => console.error('Error playing completion voiceover', error))
       }
+      const { total, correct } = attemptsRef.current
+      const accuracyValue = total > 0 ? correct / total : 1
+      attemptsRef.current = { total: 0, correct: 0 }
+      void finalizeSession({
+        itemsCompleted: totalPairs,
+        accuracy: accuracyValue
+      })
+      void openSession()
     }
-  }, [matches, totalPairs, proudVoiceover])
+  }, [matches, totalPairs, proudVoiceover, finalizeSession, openSession])
 
-  const finalizeSession = useCallback(async () => {
+  const finalizeSession = useCallback(async ({ accuracy }: { accuracy?: number } = {}) => {
     const info = sessionRef.current
     if (!info.id) {
       return
@@ -124,6 +134,7 @@ export default function MemoryGame({ unit, audio, images }: MemoryGameProps) {
       sessionId: info.id,
       durationMs,
       itemsCompleted: roundsRef.current,
+      accuracy,
       assignmentId: assignmentId ?? undefined
     })
 
@@ -132,6 +143,7 @@ export default function MemoryGame({ unit, audio, images }: MemoryGameProps) {
         assignmentId,
         studentId,
         durationMs,
+        accuracy,
         metrics: {
           minutes: durationMs != null ? durationMs / 60000 : undefined,
           rounds: roundsRef.current
@@ -152,6 +164,7 @@ export default function MemoryGame({ unit, audio, images }: MemoryGameProps) {
     }
 
     roundsRef.current = 0
+    attemptsRef.current = { total: 0, correct: 0 }
     const sessionId = await startPracticeSession({
       studentId,
       classId,
@@ -198,7 +211,10 @@ export default function MemoryGame({ unit, audio, images }: MemoryGameProps) {
 
         if (isMatch) {
           setMatches((prev) => prev + 1)
+          attemptsRef.current.correct += 1
         }
+
+        attemptsRef.current.total += 1
 
         setFlippedIds([])
         setIsChecking(false)

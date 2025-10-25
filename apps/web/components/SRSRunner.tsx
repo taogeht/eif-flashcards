@@ -100,12 +100,10 @@ export default function SRSRunner({ unit, audio, images, onProgressUpdate }: SRS
   const finalizeSession = useCallback(
     async ({
       durationMs,
-      itemsCompleted,
-      accuracy
+      itemsCompleted
     }: {
       durationMs?: number
       itemsCompleted?: number
-      accuracy?: number
     } = {}) => {
       const info = sessionRef.current
       if (!info.id) {
@@ -125,7 +123,6 @@ export default function SRSRunner({ unit, audio, images, onProgressUpdate }: SRS
         sessionId: info.id,
         durationMs: computedDurationMs,
         itemsCompleted,
-        accuracy,
         assignmentId: assignmentId ?? undefined
       })
 
@@ -134,7 +131,6 @@ export default function SRSRunner({ unit, audio, images, onProgressUpdate }: SRS
           assignmentId,
           studentId,
           durationMs: computedDurationMs,
-          accuracy,
           metrics: {
             minutes: computedDurationMs != null ? computedDurationMs / 60000 : undefined,
             cards: typeof itemsCompleted === 'number' ? itemsCompleted : undefined
@@ -258,8 +254,7 @@ export default function SRSRunner({ unit, audio, images, onProgressUpdate }: SRS
     const info = sessionRef.current
     void finalizeSession({
       durationMs: info.startedAt != null ? Date.now() - info.startedAt : undefined,
-      itemsCompleted: todayCount,
-      accuracy: todayCount > 0 ? masteredCount / todayCount : undefined
+      itemsCompleted: todayCount
     })
   }, [sessionComplete, finalizeSession, masteredCount, todayCount])
 

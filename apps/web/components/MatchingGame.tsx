@@ -1,11 +1,14 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import Confetti from 'react-confetti'
 import { Shuffle, Star, Trophy } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import type { UnitContent } from '@/lib/content'
+import { usePracticeIdentity } from '@/contexts/PracticeContext'
+import { endPracticeSession, startPracticeSession } from '@/lib/practice/sessions'
+import { completeAssignmentSubmission, startAssignmentSubmission } from '@/lib/practice/assignments'
 
 interface MatchingGameProps {
   unit: UnitContent
@@ -21,6 +24,7 @@ interface CardViewModel {
 }
 
 export default function MatchingGame({ unit, audio, images }: MatchingGameProps) {
+  const { studentId, classId, assignmentId } = usePracticeIdentity()
   const cards = useMemo<CardViewModel[]>(
     () =>
       unit.items.map((item) => ({
@@ -38,6 +42,8 @@ export default function MatchingGame({ unit, audio, images }: MatchingGameProps)
   const [matches, setMatches] = useState<Record<number, { matched: boolean; correct: boolean; imageUrl?: string }>>({})
   const [score, setScore] = useState(0)
   const [totalAttempts, setTotalAttempts] = useState(0)
+  const sessionRef = useRef<{ id: string | null; startedAt: number | null }>({ id: null, startedAt: null })
+  const attemptsRef = useRef<{ total: number; correct: number }>({ total: 0, correct: 0 })
 
   const successSounds = useMemo(
     () =>
@@ -51,6 +57,65 @@ export default function MatchingGame({ unit, audio, images }: MatchingGameProps)
   const numberOfCards = Math.min(cards.length, 6)
   const isGameComplete = score === numberOfCards && numberOfCards > 0
 
+  const finalizeSession = useCallback(
+    async ({ accuracy }: { accuracy?: number } = {}) => {
+      const info = sessionRef.current
+      if (!info.id) {
+        return
+      }
+
+      sessionRef.current = { id: null, startedAt: null }
+      const durationMs = info.startedAt != null ? Date.now() - info.startedAt : undefined
+
+      await endPracticeSession({
+        sessionId: info.id,
+        durationMs,
+        itemsCompleted: numberOfCards,
+        accuracy,
+        assignmentId: assignmentId ?? undefined
+      })
+
+      if (assignmentId && studentId) {
+        await completeAssignmentSubmission({
+          assignmentId,
+          studentId,
+          durationMs,
+          accuracy,
+          metrics: {
+            minutes: durationMs != null ? durationMs / 60000 : undefined,
+            cards: numberOfCards
+          }
+        })
+      }
+    },
+    [assignmentId, studentId, numberOfCards]
+  )
+
+  const openSession = useCallback(async () => {
+    if (sessionRef.current.id) {
+      await finalizeSession()
+    }
+
+    if (numberOfCards === 0) {
+      sessionRef.current = { id: null, startedAt: null }
+      attemptsRef.current = { total: 0, correct: 0 }
+      return
+    }
+
+    attemptsRef.current = { total: 0, correct: 0 }
+    const sessionId = await startPracticeSession({
+      studentId,
+      classId,
+      assignmentId,
+      level: unit.level,
+      activity: 'matching'
+    })
+    sessionRef.current = { id: sessionId, startedAt: sessionId ? Date.now() : null }
+    if (assignmentId && studentId) {
+      await startAssignmentSubmission({ assignmentId, studentId })
+    }
+  }, [assignmentId, classId, finalizeSession, numberOfCards, studentId, unit.level])
+
   const shuffleArray = <T,>(array: T[]): T[] => {
     const copy = [...array]
     for (let i = copy.length - 1; i > 0; i--) {
@@ -61,6 +126,7 @@ export default function MatchingGame({ unit, audio, images }: MatchingGameProps)
   }
 
   const resetGame = () => {
+    attemptsRef.current = { total: 0, correct: 0 }
     const sample = shuffleArray(cards).slice(0, numberOfCards)
     setShuffledImages(shuffleArray(sample))
     setShuffledWords(shuffleArray(sample))
@@ -75,6 +141,23 @@ export default function MatchingGame({ unit, audio, images }: MatchingGameProps)
       resetGame()
     }
   }, [cards, numberOfCards])
+
+  useEffect(() => {
+    void openSession()
+    return () => {
+      void finalizeSession()
+    }
+  }, [openSession, finalizeSession])
+
+  useEffect(() => {
+    if (isGameComplete) {
+      const { total, correct } = attemptsRef.current
+      const accuracyValue = total > 0 ? correct / total : 1
+      void finalizeSession({ accuracy: accuracyValue })
+      attemptsRef.current = { total: 0, correct: 0 }
+      void openSession()
+    }
+  }, [isGameComplete, finalizeSession, openSession])
 
   useEffect(() => {
     if (isGameComplete && proudVoiceover) {
@@ -97,6 +180,7 @@ export default function MatchingGame({ unit, audio, images }: MatchingGameProps)
     if (selectedImageId === null) return
 
     setTotalAttempts((prev) => prev + 1)
+    attemptsRef.current.total += 1
 
     const imageCard = shuffledImages.find((item) => item.id === selectedImageId)
     const wordCard = shuffledWords.find((item) => item.id === id)
@@ -114,6 +198,7 @@ export default function MatchingGame({ unit, audio, images }: MatchingGameProps)
         }))
         setScore((prev) => prev + 1)
       }, 400)
+      attemptsRef.current.correct += 1
     } else {
       setMatches((prev) => ({
         ...prev,
