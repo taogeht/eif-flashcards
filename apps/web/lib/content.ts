@@ -47,17 +47,20 @@ const contentRoot = (() => {
 })();
 const assetBase = (() => {
   const value = process.env.NEXT_PUBLIC_ASSETS_BASE_URL ?? process.env.ASSETS_BASE_URL ?? "";
-  if (!value) {
-    return "";
-  }
-  return value.replace(/\/+$/, "");
+  return value ? value.replace(/\/+$/, "") : "";
 })();
 
 const resolveAssetPath = (value: string): string => {
   if (!assetBase) {
     return value;
   }
+
   const normalized = value.replace(/^\/+/, "");
+  if (assetBase.endsWith("/assets") && normalized.startsWith("assets/")) {
+    const trimmed = normalized.slice("assets/".length);
+    return `${assetBase}/${trimmed}`;
+  }
+
   return `${assetBase}/${normalized}`;
 };
 
