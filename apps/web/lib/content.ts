@@ -45,8 +45,29 @@ const contentRoot = (() => {
 
   return candidates[0];
 })();
-export const imagesMap = imageIndex as Record<string, string>;
-export const audioMap = audioIndex as Record<string, string>;
+const assetBase = (() => {
+  const value = process.env.NEXT_PUBLIC_ASSETS_BASE_URL ?? process.env.ASSETS_BASE_URL ?? "";
+  if (!value) {
+    return "";
+  }
+  return value.replace(/\/+$/, "");
+})();
+
+const resolveAssetPath = (value: string): string => {
+  if (!assetBase) {
+    return value;
+  }
+  const normalized = value.replace(/^\/+/, "");
+  return `${assetBase}/${normalized}`;
+};
+
+export const imagesMap = Object.fromEntries(
+  Object.entries(imageIndex as Record<string, string>).map(([key, value]) => [key, resolveAssetPath(value)])
+) as Record<string, string>;
+
+export const audioMap = Object.fromEntries(
+  Object.entries(audioIndex as Record<string, string>).map(([key, value]) => [key, resolveAssetPath(value)])
+) as Record<string, string>;
 const levelMetadata = levelMeta as Record<LevelCode, { title: string }>;
 
 async function readUnit(level: LevelCode, slug: string): Promise<UnitContent> {
