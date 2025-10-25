@@ -61,9 +61,9 @@ export default function TouchGame({ unit, audio, images }: TouchGameProps) {
     [unit.items, audio, images]
   )
 
+  const [difficulty, setDifficulty] = useState(2)
   const [currentCard, setCurrentCard] = useState<CardOption | null>(null)
-  const [currentAudioCard, setCurrentAudioCard] = useState<CardOption | null>(null)
-  const [isMatch, setIsMatch] = useState<boolean>(true)
+  const [options, setOptions] = useState<CardOption[]>([])
   const [score, setScore] = useState(0)
   const [totalQuestions, setTotalQuestions] = useState(0)
   const [feedbackMessage, setFeedbackMessage] = useState<string | null>(null)
@@ -134,36 +134,30 @@ export default function TouchGame({ unit, audio, images }: TouchGameProps) {
     if (cards.length === 0) return
     setIsLoading(true)
 
-    const displayCard = cards[Math.floor(Math.random() * cards.length)]
-    let audioCard = displayCard
-    let nextIsMatch = true
+    const available = shuffleArray(cards)
+    const question = available[0]
+    const pool = available.slice(1)
 
-    if (cards.length > 1) {
-      nextIsMatch = Math.random() < 0.5
-      if (!nextIsMatch) {
-        const alternatives = cards.filter((card) => card.id !== displayCard.id)
-        audioCard = alternatives[Math.floor(Math.random() * alternatives.length)]
-      }
-    }
+    const optionCount = Math.min(difficulty, cards.length)
+    const wrongOptions = shuffleArray(pool).slice(0, optionCount - 1)
+    const newOptions = shuffleArray([question, ...wrongOptions])
 
-    setCurrentCard(displayCard)
-    setCurrentAudioCard(audioCard)
-    setIsMatch(nextIsMatch)
+    setCurrentCard(question)
+    setOptions(newOptions)
     setIsLoading(false)
 
-    void playAudio(audioCard.audioUrl)
+    void playAudio(question.audioUrl)
   }
 
   useEffect(() => {
     generateQuestion()
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [cards])
+  }, [difficulty, cards])
 
-  const handleAnswer = (answer: 'yes' | 'no') => {
+  const handleAnswer = (selectedId: number) => {
     if (!currentCard || isLoading || showFeedback) return
 
-    const expected = isMatch ? 'yes' : 'no'
-    const isCorrect = answer === expected
+    const isCorrect = selectedId === currentCard.id
     setTotalQuestions((prev) => prev + 1)
     if (isCorrect) {
       setScore((prev) => prev + 1)
@@ -188,7 +182,7 @@ export default function TouchGame({ unit, audio, images }: TouchGameProps) {
     generateQuestion()
   }
 
-  const hearAgain = () => void playAudio(currentAudioCard?.audioUrl)
+  const hearAgain = () => void playAudio(currentCard?.audioUrl)
 
   if (cards.length === 0) {
     return <p className="text-center text-slate-600">No cards available for this unit yet.</p>
@@ -262,6 +256,19 @@ export default function TouchGame({ unit, audio, images }: TouchGameProps) {
         <div className="text-xl font-bold text-blue-600">
           Score: <span className="text-green-500">{score}</span> / {totalQuestions}
         </div>
+        <div className="flex items-center gap-2">
+          {[2, 3, 4]
+            .filter((value) => cards.length >= value)
+            .map((value) => (
+              <Button
+                key={value}
+                onClick={() => setDifficulty(value)}
+                className={value === difficulty ? 'bg-blue-600 text-white' : 'bg-blue-300 text-white'}
+              >
+                Level {value - 1}
+              </Button>
+            ))}
+        </div>
         <div className="flex gap-2">
           <Button onClick={hearAgain} disabled={isLoading} className="bg-purple-500 text-white hover:bg-purple-600">
             Hear Again
@@ -273,42 +280,33 @@ export default function TouchGame({ unit, audio, images }: TouchGameProps) {
         </div>
       </div>
 
-      <div className="flex flex-col items-center gap-8">
-        <div className="relative flex aspect-square w-64 items-center justify-center overflow-hidden rounded-xl border-4 border-blue-300 bg-white shadow-lg">
-          {currentCard?.imageUrl ? (
-            <img src={currentCard.imageUrl} alt={currentCard.text} className="h-full w-full object-contain p-4" />
-          ) : (
-            <span className="text-slate-500">Missing image</span>
-          )}
+      <div className="grid gap-8 md:grid-cols-2">
+        <div className="flex flex-col items-center gap-8">
+          <div className="relative flex aspect-square w-64 items-center justify-center overflow-hidden rounded-xl border-4 border-blue-300 bg-white shadow-lg">
+            {currentCard?.imageUrl ? (
+              <img src={currentCard.imageUrl} alt={currentCard.text} className="h-full w-full object-contain p-4" />
+            ) : (
+              <span className="text-slate-500">Missing image</span>
+            )}
+          </div>
         </div>
 
         <div className="grid grid-cols-2 gap-6">
-          <button
-            type="button"
-            onClick={() => handleAnswer('yes')}
-            disabled={isLoading || Boolean(showFeedback)}
-            className="flex h-32 flex-col items-center justify-center rounded-2xl border-4 border-green-200 bg-white shadow-lg transition hover:scale-105 disabled:cursor-not-allowed"
-          >
-            <span className="mb-2 text-lg font-semibold text-slate-700">Yes</span>
-            {yesImage ? (
-              <img src={yesImage} alt="Yes" className="h-16 w-16 object-contain" />
-            ) : (
-              <span className="text-xs text-slate-500">Image missing</span>
-            )}
-          </button>
-          <button
-            type="button"
-            onClick={() => handleAnswer('no')}
-            disabled={isLoading || Boolean(showFeedback)}
-            className="flex h-32 flex-col items-center justify-center rounded-2xl border-4 border-red-200 bg-white shadow-lg transition hover:scale-105 disabled:cursor-not-allowed"
-          >
-            <span className="mb-2 text-lg font-semibold text-slate-700">No</span>
-            {noImage ? (
-              <img src={noImage} alt="No" className="h-16 w-16 object-contain" />
-            ) : (
-              <span className="text-xs text-slate-500">Image missing</span>
-            )}
-          </button>
+          {options.map((option) => (
+            <button
+              key={option.id}
+              type="button"
+              onClick={() => handleAnswer(option.id)}
+              disabled={isLoading || Boolean(showFeedback)}
+              className="flex aspect-square items-center justify-center overflow-hidden rounded-full border-4 border-transparent bg-white shadow-lg transition-transform duration-200 hover:scale-105 disabled:cursor-not-allowed"
+            >
+              {option.imageUrl ? (
+                <img src={option.imageUrl} alt={option.text} className="h-full w-full object-contain p-4" />
+              ) : (
+                <span className="text-sm text-slate-600">{option.text}</span>
+              )}
+            </button>
+          ))}
         </div>
       </div>
 
@@ -327,8 +325,23 @@ export default function TouchGame({ unit, audio, images }: TouchGameProps) {
         </div>
       )}
 
-      <div className="mt-4 text-center text-sm text-slate-500">
-        Tap Yes if the card matches what you heard, or No if it does not.
+      <div className="mt-8 flex items-center justify-center gap-8">
+        <div className="text-center">
+          <p className="mb-2 text-sm font-semibold text-slate-600">Yes</p>
+          {yesImage ? (
+            <img src={yesImage} alt="Yes choice" className="h-24 w-24 object-contain" />
+          ) : (
+            <span className="text-xs text-slate-500">Missing image</span>
+          )}
+        </div>
+        <div className="text-center">
+          <p className="mb-2 text-sm font-semibold text-slate-600">No</p>
+          {noImage ? (
+            <img src={noImage} alt="No choice" className="h-24 w-24 object-contain" />
+          ) : (
+            <span className="text-xs text-slate-500">Missing image</span>
+          )}
+        </div>
       </div>
     </div>
   )

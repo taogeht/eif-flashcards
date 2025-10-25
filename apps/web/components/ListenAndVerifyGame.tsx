@@ -108,7 +108,7 @@ export default function ListenAndVerifyGame({ unit, audio, images }: ListenAndVe
     return copy
   }
 
-  const generateQuestion = async () => {
+  const generateQuestion = useCallback(() => {
     if (cards.length === 0) return
     setIsLoading(true)
     setShowFeedback(null)
@@ -129,12 +129,11 @@ export default function ListenAndVerifyGame({ unit, audio, images }: ListenAndVe
     setDisplayedCard(cardToShow)
     setIsLoading(false)
     playAudio(audioCard.audioUrl)
-  }
+  }, [cards])
 
   useEffect(() => {
     generateQuestion()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [unit.slug])
+  }, [generateQuestion])
 
   const handleAnswer = (isYes: boolean) => {
     if (!currentAudioCard || !displayedCard || isLoading || showFeedback) return
@@ -156,7 +155,9 @@ export default function ListenAndVerifyGame({ unit, audio, images }: ListenAndVe
     const message = pool[Math.floor(Math.random() * pool.length)]
     playFeedback(message, isCorrect)
 
-    setTimeout(generateQuestion, 1500)
+    setTimeout(() => {
+      generateQuestion()
+    }, 1500)
   }
 
   const finalizeSession = useCallback(async () => {
