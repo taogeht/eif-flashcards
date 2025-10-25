@@ -93,6 +93,11 @@ export default function ActivityContent({
     id: null,
     startedAt: null
   })
+  const [activeTimer, setActiveTimer] = useState<{ id: ActivityId | null; startedAt: number | null }>({
+    id: null,
+    startedAt: null
+  })
+  const [now, setNow] = useState(Date.now())
 
   const preferredActivity = assignmentActivity ? assignmentActivityMap[assignmentActivity.toLowerCase()] ?? null : null
   const assignedActivityLabel = preferredActivity
@@ -144,14 +149,26 @@ export default function ActivityContent({
       }
     })
     trackerRef.current = { id, startedAt: null }
+    setActiveTimer({ id, startedAt: null })
   }, [])
 
   useEffect(() => {
     return () => {
       recordElapsed()
       trackerRef.current = { id: null, startedAt: null }
+      setActiveTimer({ id: null, startedAt: null })
     }
   }, [recordElapsed])
+
+  useEffect(() => {
+    if (!activeTimer.id || activeTimer.startedAt == null) {
+      return
+    }
+    const interval = setInterval(() => {
+      setNow(Date.now())
+    }, 1000)
+    return () => clearInterval(interval)
+  }, [activeTimer])
 
   const handleToggleAssigned = (activityId: ActivityId) => {
     setActivityState((prev) => {
@@ -168,7 +185,9 @@ export default function ActivityContent({
 
   const handleStartActivity = (activityId: ActivityId) => {
     recordElapsed()
-    trackerRef.current = { id: activityId, startedAt: Date.now() }
+    const startedAt = Date.now()
+    trackerRef.current = { id: activityId, startedAt }
+    setActiveTimer({ id: activityId, startedAt })
     setSelectedActivity(activityId)
   }
 
@@ -185,6 +204,7 @@ export default function ActivityContent({
   const handleExitActivity = () => {
     recordElapsed()
     trackerRef.current = { id: null, startedAt: null }
+    setActiveTimer({ id: null, startedAt: null })
     setSelectedActivity(null)
   }
 
@@ -196,9 +216,23 @@ export default function ActivityContent({
     return `${minutes}m ${seconds.toString().padStart(2, '0')}s`
   }, [])
 
-  const totalTimeMs = useMemo(
-    () => Object.values(activityState).reduce((sum, status) => sum + (status?.timeMs ?? 0), 0),
-    [activityState]
+  const totalTimeMs = useMemo(() => {
+    const stored = Object.values(activityState).reduce((sum, status) => sum + (status?.timeMs ?? 0), 0)
+    if (activeTimer.id && activeTimer.startedAt != null) {
+      return stored + (now - activeTimer.startedAt)
+    }
+    return stored
+  }, [activityState, activeTimer, now])
+
+  const getActivityTime = useCallback(
+    (activityId: ActivityId) => {
+      const base = activityState[activityId]?.timeMs ?? 0
+      if (activeTimer.id === activityId && activeTimer.startedAt != null) {
+        return base + (now - activeTimer.startedAt)
+      }
+      return base
+    },
+    [activityState, activeTimer, now]
   )
 
   const renderActivity = () => {
@@ -227,6 +261,10 @@ export default function ActivityContent({
   }
 
   const activeActivityState = selectedActivity ? activityState[selectedActivity] : null
+  const activeActivityTimeMs = useMemo(() => {
+    if (!selectedActivity) return 0
+    return getActivityTime(selectedActivity)
+  }, [getActivityTime, selectedActivity])
 
   return (
     <div className="mx-auto w-full max-w-5xl px-4 py-8">
@@ -298,7 +336,7 @@ export default function ActivityContent({
                     {isAssigned && (
                       <span className="rounded-full bg-amber-100 px-2 py-1 font-semibold text-amber-700">Assigned</span>
                     )}
-                    <span>Time today: {formatDuration(status?.timeMs ?? 0)}</span>
+                    <span>Time today: {formatDuration(getActivityTime(activity.id))}</span>
                   </div>
                 </li>
               )
@@ -315,7 +353,7 @@ export default function ActivityContent({
               Back to Activities
             </Button>
             <div className="text-xs font-semibold uppercase tracking-wide text-indigo-500">
-              Time logged this session: {formatDuration(activeActivityState?.timeMs ?? 0)}
+              Time logged this session: {formatDuration(activeActivityTimeMs)}
             </div>
           </div>
           {renderActivity()}
@@ -338,7 +376,7 @@ export default function ActivityContent({
                 </div>
                 <CardDescription>{activity.description}</CardDescription>
                 <div className="mt-3 text-xs text-slate-500">
-                  Time today: {formatDuration(activityState[activity.id]?.timeMs ?? 0)}
+                  Time today: {formatDuration(getActivityTime(activity.id))}
                 </div>
                 <Button className="mt-4" onClick={() => handleStartActivity(activity.id)}>
                   Start Activity
