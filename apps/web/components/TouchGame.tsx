@@ -78,8 +78,6 @@ export default function TouchGame({ unit, audio, images }: TouchGameProps) {
   })
   const attemptsRef = useRef<{ total: number; correct: number }>({ total: 0, correct: 0 })
 
-  const yesImage = images[`${unit.level}-image-bearcheck`]
-  const noImage = images[`${unit.level}-image-bearx`]
 
   const playAudio = async (url?: string) => {
     if (!url || !audioRef.current) return
@@ -325,23 +323,8 @@ export default function TouchGame({ unit, audio, images }: TouchGameProps) {
         </div>
       )}
 
-      <div className="mt-8 flex items-center justify-center gap-8">
-        <div className="text-center">
-          <p className="mb-2 text-sm font-semibold text-slate-600">Yes</p>
-          {yesImage ? (
-            <img src={yesImage} alt="Yes choice" className="h-24 w-24 object-contain" />
-          ) : (
-            <span className="text-xs text-slate-500">Missing image</span>
-          )}
-        </div>
-        <div className="text-center">
-          <p className="mb-2 text-sm font-semibold text-slate-600">No</p>
-          {noImage ? (
-            <img src={noImage} alt="No choice" className="h-24 w-24 object-contain" />
-          ) : (
-            <span className="text-xs text-slate-500">Missing image</span>
-          )}
-        </div>
+      <div className="mt-4 text-center text-sm text-slate-500">
+        Tap the picture that matches what you hear.
       </div>
     </div>
   )
